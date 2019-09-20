@@ -1,7 +1,5 @@
-# django-polls
+# Django Polls Application
 by Jirawadee Sampusri
-
-## Django Polls Application
 
 ## Process
 - Tutorial_1  --> Create Project, Runserver, Create polls app
