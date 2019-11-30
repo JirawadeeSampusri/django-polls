@@ -1,8 +1,10 @@
-polls/templates/polls/index.html¶
+{% block content %}
+<h1>Current polls</h1>
+{% endblock %}
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    <li><a id="{{question.id}}" href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

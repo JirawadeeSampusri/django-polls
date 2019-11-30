@@ -32,7 +32,7 @@ def invalid_urls(u_list):
 if __name__ == "__main__":
     href_list = get_links("https://cpske.github.io/ISP/")
     for href in href_list:
-        print("Valid: " + href)
+        print("Valid: "+ href)
     invalid_url = invalid_urls(href_list)        
     for invalid in invalid_url:
-        print("Broken: " + invalid)
+        print("Broken: "+ invalid)
